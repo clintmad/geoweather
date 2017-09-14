@@ -10,7 +10,7 @@ $.getJSON(apiUrl).then(function getNews(data) {
 
 function renderNews(data) {
     var template = "";
-    var newsElem = document.getElementById("myNews");
+    var newsElem = document.getElementById("my-news");
 
     for (var i = 0; i < data.articles.length; i++) {
         var thisArticle = data.articles[i];

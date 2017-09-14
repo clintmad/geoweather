@@ -21,7 +21,7 @@ function celsiusToFahrenheit(position) {
 }
 
 function renderWeather(position) {
-    var template = $("#cityTemplate").html();
+    var template = $("#city-template").html();
     var tempF = celsiusToFahrenheit(position);
     var tempC = Math.floor(position.main.temp);
 
@@ -31,11 +31,11 @@ function renderWeather(position) {
     template = template.replace("{{ icon }}", "https://openweathermap.org/img/w/" + position.weather[0].icon + ".png");
     template = template.replace("{{ conditions }}", position.weather[0].description);
 
-    $("#myCity").append($(template));
+    $("#my-city").append($(template));
 
     $('#temp-c').hide();
     
-    $('#myCity').on('click', function () {
+    $('#my-city').on('click', function () {
         $('#temp-c').toggle();
         $('#temp-f').toggle();
     })

@@ -14,24 +14,25 @@
 
 <body class="background">
     <div class="title">
-        <h1 class="title">Mad Weather and News</h1>
+        <h1>Mad Weather and News</h1>
     </div>
-    <div class="flex">
-        <div>
-            <div class="weather-text box" id="myCity">
-                <!-- Append City Here -->
+        <div class="flex">
+            <div>
+                <div class="weather-text box" id="my-city">
+                    <!-- Append City Here -->
+                </div>
+            </div>
+            <div>
+                <div class="" id="my-news">
+                    <!-- Append News Here -->
+                </div>
+                <div class="api-text">
+                    <h4>Powered by NewsAPI.org</h4>
+                </div>
             </div>
         </div>
-        <div>
-            <div class="" id="myNews">
-                <!-- Append News Here -->
-            </div>
-            <div class="api-text">
-                <h4>Powered by NewsAPI.org</h4>
-            </div>
-        </div>
-    </div>
-    <script type="text/html" id="cityTemplate">
+    
+    <script type="text/html" id="city-template">
         <div class="city">
             <div class="panel-heading">
                 <h2><span>{{ city }}</span></h2>

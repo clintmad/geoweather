@@ -2,12 +2,12 @@
 .box {
     background-color: white;
     opacity: 0.70;
-    width: 300px;
+    max-width: 300px;
     border-radius: 20px;
     margin-top: 100px;
   }
   .image{
-    width: 200px;
+    max-width: 200px;
     height: auto;
   }
   .img-flex {
@@ -17,22 +17,25 @@
   .news-box {
     opacity: 0.70;
     border-radius: 20px;
-    width: 800px;
+    max-width: 800px;
     background-color: white;
     margin-top: 100px;
     padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .article {
-    width: 500px;
+    max-width: 500px;
     font-family: 'Orbitron', sans-serif;
   }
   .icon img {
-    width: 75px;
+    max-width: 75px;
     height: auto;
   }
   .flex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   .background {
     background: no-repeat center fixed;
@@ -42,6 +45,7 @@
     text-align: right;
     font-family: 'Orbitron', sans-serif;
     color: white;
+    margin: 5px;
   }
   .weather-text {
     text-align: center;
