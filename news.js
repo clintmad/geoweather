@@ -16,7 +16,7 @@ function renderNews(data) {
         var thisArticle = data.articles[i];
         template += `
       <div class="news-box flex">
-        <div class="image img-flex">
+        <div class="img-flex">
           <img class="image" src="${thisArticle.urlToImage}">
         </div>
         <div class="article">
